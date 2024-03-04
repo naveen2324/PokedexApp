@@ -15,7 +15,10 @@ function Home() {
   }
 
   function handleClick() {
-    console.log(window.location.href.split("/")[(window.location.href.split("/").length)-1]);
+    if (searchText == "") {
+      return
+    }
+    
     if (window.location.href.split("/")[(window.location.href.split("/").length)-1] == "searchResults") {
       window.location.reload();
     }
@@ -27,12 +30,18 @@ function Home() {
     });
   };
 
+  const handleEnter = (e) => {
+    if (e.key === 'Enter') {
+      handleClick();
+    }
+  }
+
   return (
     <div id={styles.page_container}>
       <div id={styles.home_container}>
         <h1>Welcome to the</h1>
-        <img src={require('./logo.png')} />
-        <input type="text" id={styles.search_bar} onChange={handleChange}></input>
+        <img id={styles.home_logo} src={require('./logo.png')} />
+        <input type="text" id={styles.search_bar} onChange={handleChange} onKeyPress={handleEnter}></input>
         <button id={styles.search_button} onClick={handleClick}>
             <FontAwesomeIcon id={styles.search_icon} icon={faMagnifyingGlass} />
         </button>

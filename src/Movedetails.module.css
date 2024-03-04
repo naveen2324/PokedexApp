@@ -1,0 +1,140 @@
+#page_container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+#item_container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: rgb(184, 208, 220);
+
+    border-style: solid;
+    border-color: rgb(31, 134, 186);
+    border-radius: 1.5vh;
+    
+    padding: 2vh;
+
+    margin-top: 10vh;
+
+    max-width: 90vw;
+
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+#item_container p {
+    font-size: 1vw;
+}
+
+#move_name {
+    margin-bottom: 1vh;
+}
+
+.info_row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.item_heading {
+    font-size: 1vw;
+    margin-right: 0.5vw;
+}
+
+#item_container img {
+    width: 5vw;
+}
+
+#main_description {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2vh;
+}
+
+#all_pokemon_container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: rgb(184, 208, 220, 0.8);
+
+    border-style: solid;
+    border-color: rgb(31, 134, 186);
+    border-radius: 1.5vh;
+    
+    padding: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
+    margin-top: 10vh;
+}
+
+#type {
+    width: 4vw;
+
+    padding: 0.1vw;
+
+    border-style: solid;
+    border-width: 0.15vw;
+    border-radius: 0.3vw;
+
+    font-size: 1vw;
+    
+    text-align: center;
+}
+
+#pokemon_container {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(165, 204, 219);
+
+    border-style: solid;
+    border-color: rgb(31, 134, 186);
+    border-radius: 1.5vh;
+    
+    padding: 2vh;
+
+    margin-bottom: 1.5vh;
+    width: 25vw;
+}
+
+#pokemon_container:hover {
+    scale: 105%;
+    transition-duration: 0.3s;
+}
+
+#pokemon_title{
+    margin-bottom: 2vh;
+}
+
+#pokemon_number {
+    width: 5vw;
+}
+
+#pokemon_image {
+    width: 6vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#pokemon_name {
+    width: 7vw;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+}
